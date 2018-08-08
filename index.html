@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Current</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body onload="changeNormalCurrency('USD');">
+    <div class="main">
+        <div class="check">
+            <div>
+                <h1>Select currency to exhange:</h1>
+            </div>
+            <select name="normalCurrency" onchange="changeNormalCurrency(this.options[this.selectedIndex].value);">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="RUB">RUB</option>
+                <option value="GBP">GBP</option>
+            </select>
+        </div> 
+        <div class="eth">
+            <div class="label">
+                <h2>Ethereum</h2>
+            </div>
+            <div class="phonEth">
+                <img src="image/ethereum(4).png" alt="litecoin" id="eth2">
+                <br>
+                <img src="image/ltc.png" alt="">
+            </div> 
+            <div id="view-cryptoCurrenciesDataETH" class="value">
+               <div class="name">
+                   <h2>Price</h2>
+                </div>
+                <div class="val price">$22 526.92</div>
+                <div class="name">
+                    <p  class="bold">Percent change</p>
+                </div>
+                <div class="val">
+                    <input type="checkbox" class="checkbox" id="eth" onclick="toggleCryptoCurrencey('ETH')">
+                    <label for="eth"></label>
+                </div>
+                <div class="name">
+                    <p>Hour change</p>
+                </div>
+                <div class="hourChange"></div>
+                <div class="name">
+                    <p>Day change</p>
+                </div>
+                <div class="dayChange"></div>
+                <div class="name">
+                    <p>Week change</p>
+                </div>
+                <div class="weekChange"></div>
+                <div class="name">
+                    <p>Month change</p>
+                </div>
+                <div class="monthChange"></div>
+            </div>
+        </div>
+        <div class="ltc">
+            <div class="label">
+                <h2>Litecoin</h2>
+            </div>
+            <div class="phonLtc">
+                <img src="image/litecoin (2).png" alt="litecoin">
+                <br>
+                <img src="image/ltc.png" alt="">
+            </div> 
+            <div id="view-cryptoCurrenciesDataLTC" class="value">
+                <div class="name">
+                    <h2>Price</h2>
+                </div>
+                <div class="val price">$22 526.92</div>
+                <div class="name">
+                    <p class="bold">Percent change</p>
+                </div>
+                <div class="val">
+                    <input type="checkbox" class="checkbox" id="ltc" onclick="toggleCryptoCurrencey('LTC')">
+                    <label for="ltc"></label>
+                </div>
+                <div class="name">
+                    <p>Hour change</p>
+                </div>
+                <div class="hourChange"></div>
+                <div class="name">
+                    <p>Day change</p>
+                </div>
+                <div class="dayChange"></div>
+                <div class="name">
+                    <p>Week change</p>
+                </div>
+                <div class="weekChange"></div>
+                <div class="name">
+                    <p>Month change</p>
+                </div>
+                <div class="monthChange"></div>
+            </div>
+        </div>
+        <div class="btc">
+            <div class="label">
+                <h2>Bitcoin</h2>
+            </div>
+            <div class="phonBtc">
+                <img src="image/bitcoin (1).png" alt="litecoin">
+                <br>
+                <img src="image/ltc.png" alt="">
+            </div> 
+            <div id="view-cryptoCurrenciesDataBTC" class="value">
+            <div class="name">
+                <h2>Price</h2>
+            </div>
+            <div class="val price">$22 526.92</div>
+            <div class="name">
+                <p  class="bold">Percent change</p>
+            </div>
+            <div class="val">
+                <input type="checkbox" class="checkbox" id="btc" onclick="toggleCryptoCurrencey('BTC')">
+                <label for="btc"></label>
+            </div>
+            <div class="name">
+                <p>Hour change</p>
+            </div>
+            <div class="hourChange"></div>
+            <div class="name">
+                <p>Day change</p>
+            </div>
+            <div class="dayChange"></div>
+            <div class="name">
+                <p>Week change</p>
+            </div>
+            <div class="weekChange"></div>
+            <div class="name">
+                <p>Month change</p>
+            </div>
+            <div class="monthChange"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"> </script>
+</body>
+</html>

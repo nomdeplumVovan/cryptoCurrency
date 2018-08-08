@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ body {
+    font-family: 'Roboto', sans-serif;
+    color: whitesmoke;
+    background-image: url(image/phon3.jpg);
+    max-width: 1920px;
+    height: 720px;
+    display: flex;
+    justify-content: center;
+ }
+
+ .main {
+     display: grid;
+     grid-template-rows: 1fr 3.6fr;
+     grid-template-columns: 308px 308px 308px;
+     grid-column-gap: 2vw;
+     grid-row-gap: 4vw;
+     margin: 4vw;
+     max-width: 985px;
+ }
+ @media screen and (max-width: 823px) {
+     .main{
+        grid-template-columns: 308px;
+    }
+    .eth {
+        grid-row: 2;
+    }
+    .ltc {
+        grid-row: 3;
+    }
+    .btc {
+        grid-row: 4;
+    }
+    .check{
+        min-height: 98px;
+        flex-wrap: wrap;
+    }
+ } 
+
+ .check, .eth, .ltc, .btc {
+     border: 1px solid black;
+     border-radius: 0.7vw;
+  }
+
+  .check {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    border-color:  rgba(252, 252, 252, 0.1);
+    max-height: 98px;
+    max-width: 985px;
+  }
+
+
+  .check div {
+         width: 60%;
+         flex-wrap: wrap;
+   
+  }
+select {
+    border: 1px solid #92e8fe;
+    border-radius: 5px;
+    background-color: #1e252b;
+    height: 55px;
+    width: 31%;
+    color:whitesmoke;
+    line-height: 1.5;
+    font: 16px sans-serif;
+}
+option {
+    font: 16px sans-serif;
+    border-color:  #92e8fe;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #1e252b;
+    line-height: 3.5;
+}
+.eth {
+  z-index: 1;
+    background: -webkit-linear-gradient(160deg, #2d4934 0%, #577a58 35%,  #2d4934 35%, #2d4934 100%);
+    background: -moz-linear-gradient(160deg, #2d4934 0%, #577a58 35%,  #2d4934 35%, #2d4934 100%);
+    background: -o-linear-gradient(160deg, #2d4934 0%, #577a58 35%,  #2d4934 35%, #2d4934 100%);
+    background: -ms-linear-gradient(160deg, #2d4934 0%, #577a58 35%,  #2d4934 35%, #2d4934 100%);
+    background: linear-gradient(160deg, #2d4934 0%, #577a58 155px,  #2d4934 156px, #2d4934 100%);
+
+}
+
+#eth2{
+    width: 111px;
+    height: 123px;
+}
+.ltc {
+    background: -webkit-linear-gradient(160deg, rgb(50, 50, 50) 0%, rgb(89, 89, 89) 35%,  rgb(50, 50, 50) 35%, rgb(50, 50, 50) 100%);
+    background: -moz-linear-gradient(160deg, rgb(50, 50, 50) 0%, rgb(89, 89, 89) 35%,  rgb(50, 50, 50) 35%, rgb(50, 50, 50) 100%);
+    background: -o-linear-gradient(160deg, rgb(50, 50, 50) 0%, rgb(89, 89, 89) 35%,  rgb(50, 50, 50) 35%, rgb(50, 50, 50) 100%);
+    background: -ms-linear-gradient(160deg, rgb(50, 50, 50) 0%, rgb(89, 89, 89) 35%,  rgb(50, 50, 50) 35%, rgb(50, 50, 50) 100%);
+    background: linear-gradient(160deg, rgb(50, 50, 50) 0, rgb(89, 89, 89) 155px,  rgb(50, 50, 50) 156px, rgb(50, 50, 50) 100%);
+}
+
+.btc {
+    background: -webkit-linear-gradient(160deg, rgb(46, 10, 1) 0%, rgb(82, 48, 32) 35%,  rgb(46, 10, 1) 35%, rgb(46, 10, 1) 100%);
+    background: -moz-linear-gradient(160deg, rgb(46, 10, 1) 0%, rgb(82, 48, 32) 35%,  rgb(46, 10, 1) 35%, rgb(46, 10, 1) 100%);
+    background: -o-linear-gradient(160deg, rgb(46, 10, 1) 0%, rgb(82, 48, 32) 35%,  rgb(46, 10, 1) 35%, rgb(46, 10, 1) 100%);
+    background: -ms-linear-gradient(160deg, rgb(46, 10, 1) 0%, rgb(82, 48, 32) 35%,  rgb(46, 10, 1) 35%, rgb(46, 10, 1) 100%);
+    background: linear-gradient(160deg, rgb(50, 15, 3) 0%, rgb(82, 48, 32) 155px,  rgb(50, 15, 3) 156px, rgb(46, 10, 1) 100%);
+}
+
+.label {
+   padding-top: 20px;
+    text-align: center;
+}
+.phonLtc,  .phonEth, .phonBtc {
+    text-align: center;
+    padding: 0 18px;
+    padding-top: 15px;
+    line-height: 1px;
+}
+
+.value {
+    height: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10px;
+ }
+.val{
+    padding-right: 1.5vw;
+    text-align: right;
+    height: 28px;
+}
+
+.hourChange, .dayChange, .weekChange, .monthChange  {
+    padding-right: 1.5vw;
+    text-align: right;
+    height: 20px;
+    font-size: 14px;
+    color: chartreuse;
+    font-weight: 700;
+}
+
+.negative {
+    color: red;
+    font-weight: 900;
+}
+
+.name {
+    padding-left: 1.5vw;
+    text-align: left;
+    height: 28px;
+    font-size: 13px;
+    color: rgba(252, 252, 252, 0.3);
+}
+.name h2, h2 div, .bold {
+    color: rgba(252, 252, 252, 1);
+    font-weight: 700;
+}
+
+label{
+    background: url(image/radio.png) no-repeat;
+    padding-right: 45px;
+    padding-bottom: 5px;
+    color:rgba(252, 252, 252, 0)
+}
+label:hover {
+       cursor: pointer;
+}
+
+input[type=checkbox] {
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0;
+    z-index: -1;
+  
+}
+
+input[type=checkbox]:checked + label {
+    background: url(image/radio1.png) no-repeat;
+    z-index: 2;
+}
+
