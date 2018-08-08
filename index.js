@@ -35,15 +35,14 @@ class EventObserver {
     // TODO: get selector and updateView;
     const el = document.querySelector(viewId);
 
-
     if (!el) {
         return;
     }
+
     const hourChangeEl = el.querySelector('.hourChange');
     const dayChangeEL = el.querySelector('.dayChange');
     const weekChangeEL = el.querySelector('.weekChange');
     const monthChangeEL = el.querySelector('.monthChange');
-
 
     el.querySelector('.price').innerHTML = data.price;
     hourChangeEl.innerHTML = data.changes.hour;
@@ -75,10 +74,12 @@ class EventObserver {
   const state = {
     normalCurrency: 'USD',
     cryptoCurrencies: ['ETH', 'LTC', 'BTC'],
+    
     // Api Data
     cryptoCurrenciesDataETH: {},
     cryptoCurrenciesDataLTC: {},
     cryptoCurrenciesDataBTC: {},
+
     // View Data
     ETH: populateCurrencyChanges(),
     LTC: populateCurrencyChanges(),
