@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
- body {
+body {
     font-family: 'Roboto', sans-serif;
     color: whitesmoke;
     background-image: url(image/phon3.jpg);
@@ -10,42 +10,47 @@
     height: 720px;
     display: flex;
     justify-content: center;
- }
+}
 
- .main {
-     display: grid;
-     grid-template-rows: 1fr 3.6fr;
-     grid-template-columns: 308px 308px 308px;
-     grid-column-gap: 2vw;
-     grid-row-gap: 4vw;
-     margin: 4vw;
-     max-width: 985px;
- }
- @media screen and (max-width: 823px) {
-     .main{
+.main {
+    display: grid;
+    grid-template-rows: 1fr 3.6fr;
+    grid-template-columns: 308px 308px 308px;
+    grid-column-gap: 2vw;
+    grid-row-gap: 4vw;
+    margin: 4vw;
+    max-width: 985px;
+}
+
+@media screen and (max-width: 823px) {
+    .main {
         grid-template-columns: 308px;
     }
+
     .eth {
         grid-row: 2;
     }
+
     .ltc {
         grid-row: 3;
     }
+
     .btc {
         grid-row: 4;
     }
-    .check{
+
+    .check {
         min-height: 98px;
         flex-wrap: wrap;
     }
- } 
+} 
 
- .check, .eth, .ltc, .btc {
-     border: 1px solid black;
-     border-radius: 0.7vw;
-  }
+.check, .eth, .ltc, .btc {
+    border: 1px solid black;
+    border-radius: 0.7vw;
+}
 
-  .check {
+.check {
     grid-column-start: 1;
     grid-column-end: -1;
     display: flex;
@@ -55,14 +60,13 @@
     border-color:  rgba(252, 252, 252, 0.1);
     max-height: 98px;
     max-width: 985px;
-  }
+}
 
-
-  .check div {
-         width: 60%;
-         flex-wrap: wrap;
-   
-  }
+.check div {
+    width: 60%;
+    flex-wrap: wrap;
+}
+  
 select {
     border: 1px solid #92e8fe;
     border-radius: 5px;
@@ -73,6 +77,7 @@ select {
     line-height: 1.5;
     font: 16px sans-serif;
 }
+
 option {
     font: 16px sans-serif;
     border-color:  #92e8fe;
@@ -81,6 +86,7 @@ option {
     background-color: #1e252b;
     line-height: 3.5;
 }
+
 .eth {
   z-index: 1;
     background: -webkit-linear-gradient(160deg, #2d4934 0%, #577a58 35%,  #2d4934 35%, #2d4934 100%);
@@ -95,6 +101,7 @@ option {
     width: 111px;
     height: 123px;
 }
+
 .ltc {
     background: -webkit-linear-gradient(160deg, rgb(50, 50, 50) 0%, rgb(89, 89, 89) 35%,  rgb(50, 50, 50) 35%, rgb(50, 50, 50) 100%);
     background: -moz-linear-gradient(160deg, rgb(50, 50, 50) 0%, rgb(89, 89, 89) 35%,  rgb(50, 50, 50) 35%, rgb(50, 50, 50) 100%);
@@ -128,7 +135,8 @@ option {
     grid-template-columns: 1fr 1fr;
     margin-top: 10px;
  }
-.val{
+
+.val {
     padding-right: 1.5vw;
     text-align: right;
     height: 28px;
@@ -155,17 +163,19 @@ option {
     font-size: 13px;
     color: rgba(252, 252, 252, 0.3);
 }
+
 .name h2, h2 div, .bold {
     color: rgba(252, 252, 252, 1);
     font-weight: 700;
 }
 
-label{
+label {
     background: url(image/radio.png) no-repeat;
     padding-right: 45px;
     padding-bottom: 5px;
     color:rgba(252, 252, 252, 0)
 }
+
 label:hover {
        cursor: pointer;
 }
